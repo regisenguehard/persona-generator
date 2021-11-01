@@ -21,7 +21,13 @@
                             <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Accueil</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="https://enguehard.info" target="_blank">Plus d'infos</a>
+                            <a class="nav-link" href="{{ route('apihome') }}" target="_blank">API</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://qrcode.enguehard.info/" target="_blank">Générer un QR Code gratuitement</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://enguehard.info" target="_blank">Plus d'infos</a>
                         </li>
                     </ul>
                 </div>
@@ -33,11 +39,9 @@
             <div class="col-12 mt-3">
                 <h1 class="text-center">Persona Generator</h1>
             </div>
-        </div>
-        <div class="col-12 text-center mb-3">
-            <input type="submit" value="Générer un nouveau persona" class="btn btn-primary">
-        </div>
-        <form action="{{ route('home') }}" method="get" class="row">
+            <div class="col-12 text-center mb-3">
+                <a href="{{ route('home') }}" class="btn btn-primary">Générer un nouveau persona</a>
+            </div>
             <div class="col-4 mb-3">
                 <div class="card">
                     <div class="card-body">
@@ -198,12 +202,12 @@
                 </div>
             </div>
             <div class="col-12 text-center">
-                <input type="submit" value="Générer un nouveau persona" class="btn btn-primary">
+                <a href="{{ route('home') }}" class="btn btn-primary">Générer un nouveau persona</a>
             </div>
-        </form>
+        </div>
     </main>
     <footer class="text-center mt-3">
-        © <?php echo date("Y"); ?> - <a href="https://enguehard.info" target="_blank">Plus d'infos</a>
+        © <?php echo date("Y"); ?> - <a href="https://qrcode.enguehard.info/" target="_blank">Générer un QR Code gratuitement</a> - <a href="https://enguehard.info" target="_blank">Plus d'infos</a>
     </footer>
 
     <script src="js/app.js" defer></script>
