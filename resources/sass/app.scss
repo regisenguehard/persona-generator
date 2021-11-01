@@ -1,0 +1,62 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+html,
+body {
+    font-size: 16px;
+    line-height: 120%;
+}
+
+
+header,
+footer {
+    background-color: #444444;
+}
+
+.hexColor {
+    display: block;
+    height: 2rem;
+}
+textarea {
+    min-height: 75px;
+}
+input,
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+input:hover,
+textarea:hover {
+    cursor: pointer;
+}
+input:focus,
+textarea:focus,
+:focus-visible {
+    outline: none;
+}
+
+input[type="text"]:focus-visible {
+    outline: none;
+}
+
+footer {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #888888;
+    }
+    
+}
