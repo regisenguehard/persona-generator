@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Resources\personaResource;
+use Illuminate\Cache\RateLimiting\Limit;
+use Illuminate\Support\Facades\RateLimiter;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -18,7 +20,16 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/', function () {
+RateLimiter::for('global', function (Request $request) {
+    return Limit::perMinute(1)->response(function () {
+        return response()->json([
+            'code' => '429',
+            'message' => 'Too Many Requests..',
+        ]);
+    });
+});
+
+Route::middleware(['throttle:global'])->get('/', function () {
     $genres = array('male', 'female');
     $genre = $genres[array_rand($genres)];
 
