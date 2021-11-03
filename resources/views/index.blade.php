@@ -46,7 +46,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Photo</h5>
-                        <p class="card-text"><img class="img-fluid copypaste" value="https://thispersondoesnotexist.com/image" src="https://thispersondoesnotexist.com/image" alt="thispersondoesnotexist"></p>
+                        <p class="card-text"><img class="img-fluid" value="https://thispersondoesnotexist.com/image" src="https://thispersondoesnotexist.com/image" alt="thispersondoesnotexist"></p>
                     </div>
                 </div>
             </div>

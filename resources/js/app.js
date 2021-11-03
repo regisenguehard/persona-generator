@@ -2,7 +2,7 @@ require('./bootstrap');
 
 
 // $('.copypaste')
-
+Toastify = require('toastify-js');
 
 function copyTextToClipboard(text) {
     var sampleTextarea = document.createElement("textarea");
@@ -15,10 +15,23 @@ function copyTextToClipboard(text) {
     const blob = new Blob([text], { type: 'text/plain' });
     const data = [new ClipboardItem({ [blob.type]: blob })];
     navigator.clipboard.write(data);
+
+    Toastify({
+        text: "Copié",
+        duration: 1500,
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        onClick: function(){} // Callback after click
+      }).showToast();
 }
 
 copyPaste = document.querySelectorAll('.copypaste');
-copyPaste = addEventListener('click', e => {
-    copyTextToClipboard(e.target.value || e.target.src);
-    e.target.classList.add('outline');
+
+copyPaste.forEach(function(item) {
+    item.addEventListener('click', e => {
+        copyTextToClipboard(e.target.value);
+    });
 });

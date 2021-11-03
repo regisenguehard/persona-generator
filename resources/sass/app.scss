@@ -7,6 +7,9 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// Bootstrap
+@import '~toastify-js/src/toastify.css';
+
 
 html,
 body {
@@ -59,4 +62,9 @@ footer {
         color: #888888;
     }
     
+}
+
+.toastify {
+    background: #444444;
+    box-shadow: 0 3px 6px -1px rgba(68, 68, 68, 12%);
 }
