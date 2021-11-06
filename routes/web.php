@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Home;
+use App\Http\Controllers\persona;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [Home::class, 'index'])->name('home');
+Route::get('/', [persona::class, 'index'])->name('home');

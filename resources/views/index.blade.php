@@ -21,7 +21,7 @@
                             <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('apihome') }}" target="_blank">API</a>
+                            <a class="nav-link" href="{{ route('l5-swagger.default.api') }}" target="_blank">API</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://qrcode.enguehard.info/" target="_blank">Générer un QR Code gratuitement</a>

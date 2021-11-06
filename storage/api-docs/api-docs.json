@@ -1,0 +1,152 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Persona Generator",
+        "description": "Generating a persona",
+        "contact": {
+            "email": "regis.enguehard@gmail.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://persona.enguehard.info",
+            "description": "Persona Generator API Server"
+        }
+    ],
+    "paths": {
+        "/api": {
+            "get": {
+                "tags": [
+                    "persona"
+                ],
+                "summary": "Generate a persona",
+                "operationId": "persona",
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "": {
+                                            "$ref": "#/components/schemas/persona"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "429": {
+                        "description": "Too many requests"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "persona": {
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "example": "Mr."
+                    },
+                    "name": {
+                        "type": "string",
+                        "example": "Asimov"
+                    },
+                    "address": {
+                        "type": "string",
+                        "example": "Isaac"
+                    },
+                    "phoneNumber": {
+                        "type": "string",
+                        "example": "01 23 45 67 89"
+                    },
+                    "company": {
+                        "type": "string",
+                        "example": "Boston University"
+                    },
+                    "jobTitle": {
+                        "type": "string",
+                        "example": "Writer and professor"
+                    },
+                    "email": {
+                        "type": "string",
+                        "example": "isaac@asimov.org"
+                    },
+                    "userName": {
+                        "type": "string",
+                        "example": "isaacasimov"
+                    },
+                    "password": {
+                        "type": "string",
+                        "format": "password"
+                    },
+                    "domainName": {
+                        "type": "string",
+                        "example": "asimov.org"
+                    },
+                    "localIpv4": {
+                        "type": "string",
+                        "example": "127.0.0.1"
+                    },
+                    "card": {
+                        "type": "number",
+                        "example": "4973 1598 4524 7891"
+                    },
+                    "expiration": {
+                        "type": "string",
+                        "format": "date",
+                        "example": "2042-01-02"
+                    },
+                    "code": {
+                        "type": "integer",
+                        "example": "072"
+                    },
+                    "latitude": {
+                        "type": "number",
+                        "format": "float",
+                        "example": "48.8534"
+                    },
+                    "longitude": {
+                        "type": "number",
+                        "format": "float",
+                        "example": "2.3488"
+                    },
+                    "number": {
+                        "type": "integer",
+                        "example": "42"
+                    },
+                    "birthday": {
+                        "type": "string",
+                        "format": "date",
+                        "example": "1920-01-02"
+                    },
+                    "ean13": {
+                        "type": "integer",
+                        "example": "978-2070360536"
+                    },
+                    "color": {
+                        "type": "string",
+                        "example": "#ffc22b"
+                    },
+                    "realText": {
+                        "type": "string",
+                        "example": "Même les empires galactiques sont appelés à péricliter. HarrySeldon, psychohistorien de génie, a prédit mathématiquementl'effondrement de l'Empire. Réduire à un unique siècle lalongue ère de barbarie qui suivra cette chute, tel est le défide la Fondation. Aux confins de la galaxie, une planèteconcentre l'intégralité des connaissances qu'une humanitédéliquescente n'aura de cesse de posséder. Mais plus que laconvoitise, la connaissance du futur risque de s'ériger enplus grande menace pour l'accomplissement de ce futur."
+                    }
+                },
+                "type": "object"
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}

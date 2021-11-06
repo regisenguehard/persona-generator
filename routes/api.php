@@ -21,7 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 RateLimiter::for('global', function (Request $request) {
-    return Limit::perMinute(1)->response(function () {
+    return Limit::perMinute(60)->response(function () {
         return response()->json([
             'code' => '429',
             'message' => 'Too Many Requests..',
@@ -46,12 +46,12 @@ Route::middleware(['throttle:global'])->get('/', function () {
     $data['domainName'] = $faker->domainName();
     $data['localIpv4'] = $faker->localIpv4();
     $data['card']['number'] = $faker->creditCardNumber();
-    $data['card']['expiration'] = $faker->date('d/m/Y', $faker->creditCardExpirationDate());
+    $data['card']['expiration'] = $faker->date('Y-m-d', $faker->creditCardExpirationDate());
     $data['card']['code'] = $faker->numberBetween(0, 999);
     $data['latitude'] = $faker->latitude();
     $data['longitude'] = $faker->longitude();
     $data['number'] = $faker->randomDigit();
-    $data['birthday'] = $faker->date('d/m/Y', $faker->dateTimeBetween('-100 years', '-10 weeks'));
+    $data['birthday'] = $faker->date('Y-m-d', $faker->dateTimeBetween('-100 years', '-10 weeks'));
     $data['ean13'] = $faker->ean13();
     $data['color'] = $faker->hexColor();
     $data['realText'] = $faker->realText();
