@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Persona Generator</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="author" content="Régis Enguehard">
+    <link rel="author" href="https://enguehard.info" title="À propos de Régis Enguehard" type="text/html" />
+    <meta name="author" content="Régis Enguehard" />
 </head>
 <body>
     <header>
