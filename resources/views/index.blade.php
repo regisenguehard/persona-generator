@@ -45,6 +45,19 @@
             <div class="col-12 text-center mb-3">
                 <a href="{{ route('home') }}" class="btn btn-primary">Générer un nouveau persona</a>
             </div>
+            <div class="col-12 mt-3">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0395734766069968" crossorigin="anonymous"></script>
+                <!-- persona -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-0395734766069968"
+                    data-ad-slot="8144442730"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
             <div class="col-4 mb-3">
                 <div class="card">
                     <div class="card-body">
@@ -214,5 +227,13 @@
     </footer>
 
     <script src="js/app.js" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WFMSW55R82"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WFMSW55R82');
+    </script>
 </body>
 </html>
