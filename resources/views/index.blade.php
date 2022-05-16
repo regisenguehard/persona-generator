@@ -58,7 +58,7 @@
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Photo</h5>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Gentillé</h5>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Nom</h5>
@@ -82,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Adresse</h5>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Téléphone</h5>
@@ -98,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Entreprise</h5>
@@ -106,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Métier</h5>
@@ -114,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Email</h5>
@@ -122,7 +122,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Nom d'utilisateur</h5>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Mot de passe</h5>
@@ -138,7 +138,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Nom de domaine</h5>
@@ -146,7 +146,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">IPv4</h5>
@@ -154,7 +154,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Carte de crédit</h5>
@@ -166,7 +166,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Latitude / Longitude</h5>
@@ -174,7 +174,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Chiffre préféré</h5>
@@ -182,7 +182,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Date de naissance</h5>
@@ -190,7 +190,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">EAN13</h5>
@@ -198,7 +198,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Couleur</h5>
