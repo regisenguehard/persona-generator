@@ -3,6 +3,10 @@
 * https://persona.enguehard.info
 * https://github.com/regisenguehard/persona-generator
 
+## need
+
+- PHP 8.1
+
 ## Install
 
 ```
